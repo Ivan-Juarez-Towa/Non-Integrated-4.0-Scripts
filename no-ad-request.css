@@ -109,31 +109,6 @@ body {
     }
 }
 
-.payably-footer-ad-version {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    font-size: 14px;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    bottom: 180px;
-    margin-left: 30px;
-
-    div {
-        margin: auto 0px;
-        position: relative;
-        left: 30px;
-        top: 5px;
-    }
-
-    img {
-        height: 40px;
-    }
-}
-
-.payably-grid-template-column-ad-version {
-    grid-template-columns: 250px 520px !important;
-}
-
 .pci-logo {
     position: relative;
     right: 30%;
@@ -487,25 +462,6 @@ p#testprivacy {
     align-content: center;
 }
 
-#ad-div {
-    width: 50%;
-    height: 100%;
-}
-
-.ad-button-div {
-    margin: auto;
-    padding: 10px;
-    width: auto;
-    background-color: black;
-    border-radius: 15px;
-}
-
-.ad-link-target {
-    color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 a,
 button,
 input[type="submit"],
@@ -527,6 +483,31 @@ a:hover {
     max-width: 80px;
     max-height: 85px;
     padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: orange;
+    font-size: 15px;
+    line-height: 1;
+    border-radius: 25px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid orange;
+    padding: 5px 15px;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    margin-right: 85PX;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .btnV2 {
@@ -573,16 +554,6 @@ a:hover {
     flex-direction: column;
 }
 
-.content-area-ad {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    /*text-align: center;*/
-    display: flex;
-}
-
 .form-step {
     width: 100%;
     display: none;
@@ -613,6 +584,15 @@ a:hover {
 
 .popup-text {
     text-align: left;
+}
+
+.payment-form {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding-bottom: 30px;
 }
 
 #header {
@@ -746,6 +726,14 @@ a:hover {
     grid-column: 1 / 3;
 }
 
+#main-content {
+    padding: 0px 4em;
+}
+
+.main-conten-add-padding {
+    padding: 0px 1em;
+}
+
 .payment-methods {
     display: flex;
     gap: 1em;
@@ -762,14 +750,6 @@ a:hover {
         margin-left: 5em;
     }
 
-    .payment-summary-ad {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        column-gap: 1em;
-        row-gap: 1em;
-        margin-left: 2em;
-    }
-
     #powered-by {
         display: table;
     }
@@ -782,6 +762,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1366px) and (orientation:landscape) {
+    #main-content {
+        padding: 0px 1em;
+    }
+
     #header {
         display: grid;
         grid-template-columns: 110px 720px;
@@ -800,13 +784,6 @@ a:hover {
     }
 
     .payment-summary {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        column-gap: 1em;
-        row-gap: 1em;
-    }
-
-    .payment-summary-ad {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
         column-gap: 1em;
@@ -848,105 +825,11 @@ a:hover {
     .summary-convenience-fee {
         margin-left: 0px;
     }
-
-    .payably-footer-ad-version {
-        position: unset;
-        margin-left: 0px;
-        display: grid;
-        grid-template-columns: 25% 50% 18%;
-        font-size: 14px;
-        margin-top: 1%;
-        margin-bottom: 3%;
-
-        div {
-            margin: auto 0px;
-            position: relative;
-            left: 30px;
-            top: 5px;
-        }
-
-        img {
-            height: 40px;
-        }
-    }
-
-    .payably-grid-template-column-ad-version {
-        grid-template-columns: 200px 420px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 1em !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 1em !important;
-        margin-left: 1em !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 1em !important;
-        margin-left: 1em !important;
-    }
-
-    .step2-ad-version {
-        padding-right: 1em !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 1em !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 1em !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0em !important;
-    }
-
-    .pay-btn-ad-version {
-        width: 145px !important;
-        padding: 6px 0px !important;
-    }
 }
 
 @media (max-width: 1280px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     #visit-btn {
@@ -970,24 +853,6 @@ a:hover {
     }
 
     .payably-footer {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        left: 0px;
-        padding: 0px;
-
-        img {
-            display: block;
-            margin: auto;
-            margin-bottom: 15px;
-            right: 0px;
-            margin-top: 10px;
-        }
-
-        div {
-            position: inherit;
-        }
-    }
-
-    .payably-footer-ad-version {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         left: 0px;
         padding: 0px;
@@ -1038,6 +903,10 @@ a:hover {
         grid-column: 1 / 3;
         grid-row: 2;
         margin: auto;
+    }
+
+    #main-content {
+        padding: 0px;
     }
 
     .payment-methods {
@@ -1452,40 +1321,8 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -1564,40 +1401,8 @@ a:hover {
 }
 
 @media (max-width: 912px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -1647,40 +1452,8 @@ a:hover {
 }
 
 @media (max-width: 853px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -1730,40 +1503,8 @@ a:hover {
 }
 
 @media (max-width: 820px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -1815,40 +1556,8 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -1927,40 +1636,8 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .invoice-failed {
@@ -1980,24 +1657,6 @@ a:hover {
     }
 
     .payably-footer {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        left: 0px;
-        padding: 0px;
-
-        img {
-            display: block;
-            margin: auto;
-            margin-bottom: 15px;
-            right: 0px;
-            margin-top: 10px;
-        }
-
-        div {
-            position: inherit;
-        }
-    }
-
-    .payably-footer-ad-version {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         left: 0px;
         padding: 0px;
@@ -2048,6 +1707,10 @@ a:hover {
         grid-column: 1 / 3;
         grid-row: 2;
         margin: auto;
+    }
+
+    #main-content {
+        padding: 0px;
     }
 
     .payment-methods {
@@ -2432,40 +2095,8 @@ a:hover {
 }
 
 @media screen and (max-width: 450px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     #payShell {
@@ -2480,40 +2111,8 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     #payShell {
@@ -2532,40 +2131,8 @@ a:hover {
 }
 
 @media screen and (max-width: 380px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto;
     }
 
     #payShell {
@@ -2580,40 +2147,8 @@ a:hover {
 }
 
 @media screen and (max-width: 320px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     #payShell {
@@ -2628,40 +2163,8 @@ a:hover {
 }
 
 @media screen and (max-height: 720px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .content-area {
@@ -2675,16 +2178,6 @@ a:hover {
         flex-direction: column;
         padding-top: 1%;
         padding-bottom: 1%;
-    }
-
-    .content-area-ad {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        overflow: auto;
-        z-index: 0;
-        /*text-align: center;*/
-        display: flex;
     }
 }
 
@@ -2719,40 +2212,8 @@ a:hover {
 }
 
 @media screen and (max-width: 550px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     body {
@@ -3100,40 +2561,8 @@ a:hover {
 }
 
 @media screen and (max-width: 540px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3180,40 +2609,8 @@ a:hover {
 }
 
 @media screen and (max-width: 430px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .zip-code {
@@ -3222,40 +2619,8 @@ a:hover {
 }
 
 @media screen and (max-width: 414px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .zip-code {
@@ -3264,40 +2629,8 @@ a:hover {
 }
 
 @media screen and (max-width: 344px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3318,40 +2651,8 @@ a:hover {
 }
 
 @media screen and (max-width: 850px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto;
     }
 
     #paymentTypeTextDiv {
@@ -3394,43 +2695,12 @@ a:hover {
         margin-left: -100%;
         margin-bottom: 2em;
     }
+
 }
 
 @media (max-width: 450px) {
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3473,40 +2743,8 @@ a:hover {
 }
 
 @media (max-width: 430px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3549,40 +2787,8 @@ a:hover {
 }
 
 @media (max-width: 412px) {
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3627,40 +2833,8 @@ a:hover {
 }
 
 @media (max-width: 390px) {
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3703,40 +2877,8 @@ a:hover {
 }
 
 @media (max-width: 360px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {
@@ -3779,40 +2921,8 @@ a:hover {
 }
 
 @media (max-width: 344px) {
-    .step2-ad-version {
-        padding-right: 0px !important;
-    }
-
-    .payably-paymentMethodDiv-ad-version {
-        padding: 0px 0px !important;
-    }
-
-    .payably-paymentDetailTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .payably-paymentConfirmationTextDiv-ad-version {
-        padding: 0px 0px 0px 5px !important;
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-    }
-
-    .simple-left-padding-ad {
-        padding-left: 0px !important;
-    }
-
-    .simple-left-margin-ad {
-        margin-left: 0px !important;
-    }
-
-    .remove-margin-left-ad {
-        margin-left: 0px !important;
-    }
-
-    #ad-div {
-        display: none;
+    .payment-form {
+        height: auto !important;
     }
 
     .exp-date {

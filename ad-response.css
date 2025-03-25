@@ -1,4 +1,4 @@
-html {
+    html {
     font-size: 14px;
 }
 
@@ -28,16 +28,6 @@ body {
     margin: 0px;
     height: 100%;
     overflow: hidden;
-}
-
-.logoStep {
-    display: block;
-    height: 120px;
-    margin: auto;
-    margin-bottom: -3.4em;
-    border: 3.5px solid;
-    border-color: white;
-    border-radius: 50%;
 }
 
 .newlogoStep {
@@ -144,18 +134,6 @@ p#testprivacy {
     justify-content: space-around;
 }
 
-.invoice-error {
-    display: inline-flex;
-    height: 150px;
-    width: 100%;
-
-    span {
-        margin: auto;
-        color: red;
-        font-weight: bold;
-    }
-}
-
 .input-wrapper {
     width: 100%;
     display: inline-flex;
@@ -188,25 +166,12 @@ p#testprivacy {
     border-style: none;
 }
 
-.paymentMethodSpan {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.paymentMethodContainer {
-    display: flex;
-    width: 205px;
-    border: solid 1px lightgrey;
-    padding: 1px 5px;
-    justify-content: center;
-}
-
 .nextButton {
     border-radius: 15px;
     font-size: 15px;
     font-weight: bold;
     padding: 6px 20px !important;
-    height: 40px;
+    height: 25px;
 }
 
 .flex-center {
@@ -236,6 +201,7 @@ p#testprivacy {
     h4 {
         margin: auto 0px;
         padding-left: 10px;
+        font-size: 1.5rem;
     }
 
     img {
@@ -256,116 +222,12 @@ p#testprivacy {
     h4 {
         margin: auto 0px;
         padding-left: 10px;
+        font-size: 1.5rem;
     }
 
     img {
         width: 40px;
         height: 40px;
-    }
-}
-
-.payjs-label {
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-#card-number-container {
-    padding-left: 4.5em;
-    row-gap: 0.3rem;
-    column-gap: 2em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 25% 15%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 17px;
-}
-
-.card-holder-container {
-    padding-left: 4.5em;
-    padding-top: 1em;
-    row-gap: 0.3rem;
-    column-gap: 2em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 30% 15% 17%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 17px;
-}
-
-.payjs-base {
-    border-radius: 6px;
-    border: 1px solid #ced4da !important;
-    color: #495057;
-    background: #fff;
-    padding: 0.5rem;
-    height: auto;
-    width: 93%;
-    outline: none;
-}
-
-.ach-base {
-    width: 93% !important;
-}
-
-.payjs-container input {
-    display: inline-block;
-}
-
-.payjs-wrapper {
-    width: auto !important;
-}
-
-.pay-now-div {
-    display: flex;
-    margin-left: 4em;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 1em;
-}
-
-.info-text-div {
-    width: auto;
-    margin: auto;
-    display: flex;
-    text-align: center;
-    min-width: 300px;
-}
-
-.disabled-link {
-    pointer-events: none;
-}
-
-.payjs-result-error {
-    text-align: center;
-    margin-left: 5em;
-    color: red;
-}
-
-.ach-container {
-    margin-left: 5em;
-    display: block;
-}
-
-.disclaimer-div {
-    margin-left: 6.5em;
-    text-align: justify;
-    font-size: 12px;
-}
-
-.field-error {
-    color: red;
-    display: block !important;
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-.total-amount {
-    margin: auto 0px auto 1em;
-    font-size: 22px;
-
-    p {
-        margin-bottom: 0.1rem;
     }
 }
 
@@ -407,10 +269,6 @@ p#testprivacy {
     top: 15px;
     left: 55%;
     z-index: 2;
-}
-
-.step-progress::after {
-    border-color: #ccc;
 }
 
 .stepper-item .step-counter {
@@ -557,11 +415,6 @@ a:hover {
     font-family: 'Verdana', sans-serif;
 }
 
-.logo {
-    width: 220px;
-    height: auto;
-}
-
 .content-area {
     width: 100%;
     height: 100vh;
@@ -593,36 +446,10 @@ a:hover {
     flex-direction: column;
 }
 
-.btn-group {
-    width: 75%;
-    display: -webkit-inline-box;
-    align-items: center;
-    justify-content: right;
-}
-
-.form-popup {
-    position: relative;
-    top: 0px;
-    left: 0;
-    right: 0;
-    margin: 0;
-    background: #fff;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-.popup-text {
-    text-align: left;
-}
-
 #header {
     display: grid;
     grid-template-columns: 320px 720px;
     padding: 0 1em;
-}
-
-.convenience-fee {
-    font-size: 14px;
 }
 
 #paymentMethodDiv {
@@ -631,7 +458,6 @@ a:hover {
 }
 
 #paymentFormTextDiv {
-    cursor: pointer;
     display: flex;
     height: fit-content;
     width: 100%;
@@ -640,10 +466,6 @@ a:hover {
 
 #step1Container {
     margin-right: 0px;
-}
-
-.payment-type {
-    display: flex;
 }
 
 #nextBtnDiv {
@@ -663,49 +485,10 @@ a:hover {
     padding-left: 5px;
 }
 
-.pci-logo-responsive {
-    display: none;
-    width: 100%;
-
-    img {
-        margin: auto;
-        height: 30px;
-    }
-}
-
 #step2Container {
     padding-left: 5px;
     padding-right: 5em;
     margin-bottom: 5px;
-}
-
-.email-receipt {
-    width: 100%;
-}
-
-.card-number {
-    width: 100%;
-}
-
-.exp-date {
-    width: 100%;
-}
-
-.cvv-code {
-    width: 100%;
-}
-
-
-.name-on-card {
-    width: 100%;
-}
-
-.billing-street-address {
-    width: 100%;
-}
-
-.zip-code {
-    width: 100%;
 }
 
 .ach-footer {
@@ -725,7 +508,7 @@ a:hover {
 }
 
 .grid-column-end {
-    grid-column: 4;
+    grid-column: 5;
 }
 
 .payment-summary {
@@ -744,13 +527,6 @@ a:hover {
 
 .grid-span-2-columns {
     grid-column: 1 / 3;
-}
-
-.payment-methods {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    padding: 1em;
 }
 
 @media screen and (min-width: 1440px) and (orientation:landscape) {
@@ -820,18 +596,6 @@ a:hover {
 
     .convenience-fee {
         font-size: 12px;
-    }
-
-    .total-amount {
-        font-size: 18px;
-    }
-
-    #card-number-container {
-        grid-template-columns: 45% 25% 15%;
-    }
-
-    .card-holder-container {
-        grid-template-columns: 20% 28% 15% 15%;
     }
 
     .input-wrapper {
@@ -1040,19 +804,10 @@ a:hover {
         margin: auto;
     }
 
-    .payment-methods {
-        display: flex;
-    }
-
     .shell {
         margin: auto;
         width: 95% !important;
         padding: 0px;
-    }
-
-    .paymentMethodContainer {
-        width: 155px;
-        height: 120px;
     }
 
     #nextBtnDiv {
@@ -1153,10 +908,6 @@ a:hover {
         left: 65%;
     }
 
-    .payment-type {
-        display: block;
-    }
-
     #paymentDetailTextDiv {
         margin: 0px;
     }
@@ -1169,16 +920,8 @@ a:hover {
         padding: 0 15px;
     }
 
-    .payjs-result-error {
-        margin-left: 0px;
-    }
-
     .pci-logo {
         display: none;
-    }
-
-    .pci-logo-responsive {
-        display: flex;
     }
 
     #step2Container {
@@ -1190,131 +933,8 @@ a:hover {
         display: none;
     }
 
-    #card-number-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .card-holder-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     #cardTypeDiv {
         padding-left: 15px !important;
-    }
-
-    .card-number {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .exp-date {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-        width: auto !important;
-        margin-bottom: 15px;
-
-        input {
-            width: 350px !important;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .cvv-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 135px !important;
-
-        input {
-            width: 225px;
-        }
-
-        label {
-            width: 100%;
-        }
-
-    }
-
-    .name-on-card {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .billing-street-address {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-
-        input {
-            width: 950px !important;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .zip-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 90% !important;
-        margin-left: 220px;
-
-        input {
-            margin-left: 140px;
-            width: 225px;
-        }
-
-        label {
-            margin-left: 140px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 140px;
-        }
-
-    }
-
-    .email-receipt {
-        width: 85% !important;
-        padding-left: 18px;
-        padding-right: 15px;
-        grid-column: 1 / 3;
-        margin-top: 10px;
-
-        input {
-            width: 100% !important;
-        }
-    }
-
-    .pay-now-div {
-        margin-left: 0px;
-        display: block;
-        margin-top: 0.5em;
-    }
-
-    .total-amount {
-        margin: auto 0px auto 1.5em;
     }
 
     .btnV2-active {
@@ -1370,10 +990,6 @@ a:hover {
         padding: 0px 0px 0px 30px;
     }
 
-    .ach-container {
-        margin-left: 0px;
-    }
-
     .ach-input-fields {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1396,21 +1012,6 @@ a:hover {
         padding: 0px 1em;
     }
 
-    #email-receipt-label,
-    #accounting-confirm-label {
-        text-overflow: ellipsis;
-        display: inline-block;
-        overflow: hidden;
-        width: 100%;
-        white-space: nowrap;
-        vertical-align: middle;
-    }
-
-    .disclaimer-div {
-        margin: 10px 0px;
-        padding: 0px 1.5em;
-    }
-
     #summary-invoice {
         margin-left: 20px;
     }
@@ -1421,33 +1022,6 @@ a:hover {
 
     .responsive-card-details {
         display: block;
-    }
-}
-
-@media (max-width: 1260px) {
-    .exp-date {
-        input {
-            width: 20em !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 150px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 50em !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 140px;
-            width: 150px;
-        }
     }
 }
 
@@ -1488,41 +1062,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 330px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 175px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 730px !important;
-        }
-    }
-
-    .zip-code {
-        margin-left: 20px;
-
-        input {
-            margin-left: 260px;
-            width: 110px;
-        }
-
-        label {
-            margin-left: 260px;
-        }
-
-        span {
-            margin-left: 260px;
-        }
-    }
-
     #summary-invoice {
         margin-left: 20px;
     }
@@ -1533,33 +1072,6 @@ a:hover {
 
     .responsive-card-details {
         display: block;
-    }
-}
-
-@media (max-width: 960px) {
-    .exp-date {
-        input {
-            width: 305px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 140px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 685px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 260px;
-            width: 80px;
-        }
     }
 }
 
@@ -1600,38 +1112,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 235px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 165px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 635px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 220px;
-            width: 100px;
-        }
-
-        label {
-            margin-left: 220px;
-        }
-
-        span {
-            margin-left: 220px;
-        }
-    }
 
     #summary-invoice {
         margin-left: 20px;
@@ -1681,39 +1161,6 @@ a:hover {
 
     #ad-div {
         display: none;
-    }
-
-    .exp-date {
-        input {
-            width: 370px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 165px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 570px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 190px;
-            width: 100px;
-        }
-
-        label {
-            margin-left: 190px;
-        }
-
-        span {
-            margin-left: 190px;
-        }
     }
 
     #summary-invoice {
@@ -1766,41 +1213,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 350px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 175px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 550px !important;
-        }
-    }
-
-    .zip-code {
-        margin-left: 20px;
-
-        input {
-            margin-left: 165px;
-            width: 110px;
-        }
-
-        label {
-            margin-left: 165px;
-        }
-
-        span {
-            margin-left: 1650px;
-        }
-    }
-
     #summary-invoice {
         margin-left: 20px;
     }
@@ -1851,41 +1263,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 300px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 175px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 485px !important;
-        }
-    }
-
-    .zip-code {
-        margin-left: 25px;
-
-        input {
-            margin-left: 140px;
-            width: 110px;
-        }
-
-        label {
-            margin-left: 140px;
-        }
-
-        span {
-            margin-left: 140px;
-        }
-    }
-
     #summary-invoice {
         margin-left: 20px;
     }
@@ -1896,33 +1273,6 @@ a:hover {
 
     .responsive-card-details {
         display: block;
-    }
-}
-
-@media (max-width: 700px) {
-    .exp-date {
-        input {
-            width: 215px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 145px;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 415px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 140px;
-            width: 145px;
-        }
     }
 }
 
@@ -2050,20 +1400,10 @@ a:hover {
         margin: auto;
     }
 
-    .payment-methods {
-        display: grid;
-        grid-template-columns: 155px 155px;
-    }
-
     .shell {
         margin: auto;
         width: 95% !important;
         padding: 0px;
-    }
-
-    .paymentMethodContainer {
-        width: 155px;
-        height: 120px;
     }
 
     #nextBtnDiv {
@@ -2164,10 +1504,6 @@ a:hover {
         left: 65%;
     }
 
-    .payment-type {
-        display: block;
-    }
-
     #nextBtnDiv {
         flex-direction: unset;
         margin: auto;
@@ -2185,16 +1521,8 @@ a:hover {
         padding: 0 15px;
     }
 
-    .payjs-result-error {
-        margin-left: 0px;
-    }
-
     .pci-logo {
         display: none;
-    }
-
-    .pci-logo-responsive {
-        display: flex;
     }
 
     #step2Container {
@@ -2206,123 +1534,8 @@ a:hover {
         display: none;
     }
 
-    #card-number-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .card-holder-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     #cardTypeDiv {
         padding-left: 15px !important;
-    }
-
-    .card-number {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .exp-date {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-        width: 120px !important;
-        margin-bottom: 15px;
-
-        input {
-            width: 125px !important;
-        }
-    }
-
-    .cvv-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 135px !important;
-
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .name-on-card {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .billing-street-address {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-        width: 220px !important;
-
-        input {
-            width: 225px !important;
-        }
-    }
-
-    .zip-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 90% !important;
-        margin-left: 25px;
-
-        input {
-            margin-left: 36px;
-            width: 95px;
-        }
-
-        label {
-            margin-left: 36px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 35px;
-        }
-
-    }
-
-    .email-receipt {
-        width: 85% !important;
-        padding-left: 18px;
-        padding-right: 15px;
-        grid-column: 1 / 3;
-        margin-top: 10px;
-
-        input {
-            width: 100% !important;
-        }
-    }
-
-    .pay-now-div {
-        margin-left: 0px;
-        display: block;
-        margin-top: 0.5em;
-    }
-
-    .total-amount {
-        margin: auto 0px auto 1.5em;
     }
 
     .btnV2-active {
@@ -2377,10 +1590,6 @@ a:hover {
         padding: 0px;
     }
 
-    .ach-container {
-        margin-left: 0px;
-    }
-
     .ach-input-fields {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2401,21 +1610,6 @@ a:hover {
 
     .ach-input-fields-3 {
         padding: 0px 1em;
-    }
-
-    #email-receipt-label,
-    #accounting-confirm-label {
-        text-overflow: ellipsis;
-        display: inline-block;
-        overflow: hidden;
-        width: 100%;
-        white-space: nowrap;
-        vertical-align: middle;
-    }
-
-    .disclaimer-div {
-        margin: 10px 0px;
-        padding: 0px 1.5em;
     }
 
     #summary-invoice {
@@ -2688,36 +1882,6 @@ a:hover {
     }
 }
 
-@media (max-width: 720px) {
-    .cvv-code {
-        input {
-            width: 154px;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 140px;
-            width: 100px;
-        }
-    }
-}
-
-@media (max-width: 670px) {
-    .cvv-code {
-        input {
-            width: 90px;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 140px;
-            width: 90px;
-        }
-    }
-}
-
 @media screen and (max-width: 550px) {
     .step2-ad-version {
         padding-right: 0px !important;
@@ -2831,10 +1995,6 @@ a:hover {
         left: 65%;
     }
 
-    .payment-type {
-        display: block;
-    }
-
     #nextBtnDiv {
         flex-direction: unset;
         margin: auto;
@@ -2852,16 +2012,8 @@ a:hover {
         padding: 0 15px;
     }
 
-    .payjs-result-error {
-        margin-left: 0px;
-    }
-
     .pci-logo {
         display: none;
-    }
-
-    .pci-logo-responsive {
-        display: flex;
     }
 
     #step2Container {
@@ -2873,126 +2025,8 @@ a:hover {
         display: none;
     }
 
-    #card-number-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .card-holder-container {
-        margin-left: 0px;
-        width: 100%;
-        padding: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     #cardTypeDiv {
         padding-left: 15px !important;
-    }
-
-    .card-number {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .exp-date {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-        width: 135px !important;
-        max-width: 135px !important;
-        margin-bottom: 15px;
-
-        input {
-            width: 125px !important;
-        }
-    }
-
-    .cvv-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 135px !important;
-        max-width: 135px !important;
-
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .name-on-card {
-        max-width: inherit;
-        grid-column: span 2;
-        grid-row: 1;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .billing-street-address {
-        grid-column-start: 1;
-        grid-row: 2;
-        padding-left: 14px;
-        width: 235px !important;
-        max-width: 235px !important;
-
-        input {
-            width: 225px !important;
-        }
-    }
-
-    .zip-code {
-        grid-column-start: 2;
-        grid-row: 2;
-        padding-right: 22px;
-        width: 90% !important;
-        max-width: 235px !important;
-        margin-left: 25px;
-
-        input {
-            margin-left: 36px;
-            width: 80px;
-        }
-
-        label {
-            margin-left: 36px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 36px;
-        }
-    }
-
-    .email-receipt {
-        width: 85% !important;
-        padding-left: 18px;
-        padding-right: 15px;
-        grid-column: 1 / 3;
-        margin-top: 10px;
-
-        input {
-            width: 100% !important;
-        }
-    }
-
-    .pay-now-div {
-        margin-left: 0px;
-        display: block;
-        margin-top: 0.5em;
-    }
-
-    .total-amount {
-        margin: auto 0px auto 0.9em;
     }
 
     .btnV2-active {
@@ -3056,10 +2090,6 @@ a:hover {
         padding: 0px;
     }
 
-    .ach-container {
-        margin-left: 0px;
-    }
-
     .ach-input-fields {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3080,21 +2110,6 @@ a:hover {
 
     .ach-input-fields-3 {
         padding: 0px 1em;
-    }
-
-    #email-receipt-label,
-    #accounting-confirm-label {
-        text-overflow: ellipsis;
-        display: inline-block;
-        overflow: hidden;
-        width: 100%;
-        white-space: nowrap;
-        vertical-align: middle;
-    }
-
-    .disclaimer-div {
-        margin: 10px 0px;
-        padding: 0px 1.5em;
     }
 
 }
@@ -3136,12 +2151,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 140px !important;
-        }
-    }
-
     .billing-street-address {
         input {
             width: 340px !important;
@@ -3149,7 +2158,7 @@ a:hover {
     }
 
     .zip-code {
-        margin-left: 20px;
+        margin-left: 102px;
     }
 
     .input-wrapper {
@@ -3159,11 +2168,6 @@ a:hover {
     #paymentAmountRow {
         grid-column: 3;
         grid-row: 2;
-    }
-
-    .payment-methods {
-        display: grid;
-        grid-template-columns: 155px 155px;
     }
 
     #summary-invoice {
@@ -3300,12 +2304,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 90px !important;
-        }
-    }
-
     .billing-street-address {
         input {
             width: 190px !important;
@@ -3432,44 +2430,6 @@ a:hover {
     #ad-div {
         display: none;
     }
-
-    .exp-date {
-        input {
-            width: 160px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 260px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 54px;
-            width: 95px;
-        }
-
-        label {
-            margin-left: 54px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 54px;
-        }
-    }
 }
 
 @media (max-width: 430px) {
@@ -3507,44 +2467,6 @@ a:hover {
 
     #ad-div {
         display: none;
-    }
-
-    .exp-date {
-        input {
-            width: 170px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 250px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 60px;
-            width: 60px;
-        }
-
-        label {
-            margin-left: 60px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 60px;
-        }
     }
 }
 
@@ -3584,46 +2506,6 @@ a:hover {
     #ad-div {
         display: none;
     }
-
-    .exp-date {
-        input {
-            width: 125px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 250px !important;
-        }
-    }
-
-    .zip-code {
-        margin-left: 25px;
-
-        input {
-            margin-left: 53px;
-            width: 70px;
-        }
-
-        label {
-            margin-left: 53px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 53px;
-        }
-    }
 }
 
 @media (max-width: 390px) {
@@ -3661,44 +2543,6 @@ a:hover {
 
     #ad-div {
         display: none;
-    }
-
-    .exp-date {
-        input {
-            width: 115px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 100px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 220px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 35px;
-            width: 65px;
-        }
-
-        label {
-            margin-left: 35px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 35px;
-        }
     }
 }
 
@@ -3739,43 +2583,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 100px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 210px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 28px;
-            width: 70px;
-        }
-
-        label {
-            margin-left: 28px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 28px;
-        }
-    }
 }
 
 @media (max-width: 344px) {
@@ -3815,43 +2622,6 @@ a:hover {
         display: none;
     }
 
-    .exp-date {
-        input {
-            width: 80px !important;
-        }
-    }
-
-    .cvv-code {
-        input {
-            width: 95px;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .billing-street-address {
-        input {
-            width: 195px !important;
-        }
-    }
-
-    .zip-code {
-        input {
-            margin-left: 20px;
-            width: 95px;
-        }
-
-        label {
-            margin-left: 20px;
-            width: 100%;
-        }
-
-        span {
-            margin-left: 20px;
-        }
-    }
 }
 
 .input-field {
