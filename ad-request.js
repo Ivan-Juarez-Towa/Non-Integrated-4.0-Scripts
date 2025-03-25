@@ -1,5 +1,4 @@
 var searchParams = (new URLSearchParams(window.location.search));
-var merchant = new MerchantSettings();
 var paymentType = 0; //0 = card, 1 = ach
 var submitted = false;
 
@@ -427,7 +426,6 @@ var infoColorCode = merchant.themeColor;
 var step = 1;
 let paybtn;
 let transactionFinished = false;
-let autocomplete;
 let stepContainer1Hidden = false;
 let stepContainer2Hidden = true;
 let adsVersion = true;
@@ -894,67 +892,6 @@ function inactiveStep2() {
     stepContainer2Hidden = true;
 }
 
-function initAutoComplete() {
-    let addressFieldCard = document.querySelector("#billing-street");
-
-    //Create the autocomplete object, restricting the search predictions to
-    //addresses in the US and Canada.
-    autocomplete = new google.maps.places.Autocomplete(addressFieldCard, {
-        componentRestrictions: { country: ["us", "ca", "uk"] },
-        fields: ["address_components"],
-        types: ["address"],
-    });
-
-    // When the user selects an address from the drop-down, populate the
-    // address fields in the form.
-    autocomplete.addListener("place_changed", fillInAddress);
-}
-
-function fillInAddress() {
-    const place = autocomplete.getPlace();
-    let postcode = "";
-    let address = "";
-
-    for (const component of place.address_components) {
-        const componentType = component.types[0];
-
-        switch (componentType) {
-            case "postal_code": {
-                postcode = `${component.long_name}${postcode}`;
-                break;
-            }
-
-            case "postal_code_suffix": {
-                postcode = `${postcode}`;
-                break;
-            }
-            case "postal_code_prefix": {
-                postcode = `${component.long_name} ${postcode}`;
-                break;
-            }
-            case "route": {
-                address += `${component.long_name}`;
-                break;
-            }
-            case "street_number": {
-                address += `${component.long_name} `;
-                break;
-            }
-            case "locality": {
-                address = `${address}`;
-                break;
-            }
-        }
-    }
-
-    if (address != undefined || address != "undefined") {
-        document.getElementById("billing-street").value = address;
-    }
-
-    if (postcode != "") {
-        document.getElementById("zip-code").value = postcode;
-    }
-}
 
 function getImageSrc(cardType) {
     var src = '';
