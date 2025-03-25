@@ -3,23 +3,6 @@ var merchant = new MerchantSettings();
 var paymentType = 0; //0 = card, 1 = ach
 var submitted = false;
 
-function MerchantSettings() {
-    this.logoBanner = "https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/BP%20Logo%20Square.jpg";
-    this.imageBackground = "https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/shutterstock_1997021540.jpg";
-    this.imageBackgroundLink = "https://bristolpay.com/";
-    this.dbaText = "Bristol Pay";
-    this.gratitudeText = "Thank you for choosing <strong>Bristol Pay!</strong> We appreciate your business.";
-    this.infoText = "If you have any questions, please call (555)123-4567 or email us at support@bristolpay.com";
-    this.addressText = "1 Test Way, Babylon NY 11702 | support@bristolpay.com | bristolpay.com | (555)123-4567";
-    this.applySurcharge = true;
-    this.surchargeType = "percentage";
-    this.surchargeAmount = 3;
-    this.multiplePayMethod = true;
-    this.themeColor = "#2da137";
-    this.website = "bristolpay.com"
-    this.csn = "(555)123-4567"
-}
-
 function setMerchantConfiguration() {
     if (merchant.logoBanner != undefined && merchant.logoBanner != "") {
         $(".newlogoStep").attr('src', merchant.logoBanner);
