@@ -387,6 +387,9 @@ function validateTwoStep() {
             return false;
         }
 
+        document.getElementById('UMemailreceipt').value = document.getElementById('email-receipt').value;
+        document.getElementsByName('UMemail')[0].value = document.getElementById('email-receipt').value;
+
         document.getElementsByName('UMbillcompany')[0].value = $('#companyName-details').val();
         document.getElementsByName('UMaccounttype')[0].value = document.getElementById('account-type').value;
         document.getElementsByName('UMname')[0].value = document.getElementById('account-holder').value;
