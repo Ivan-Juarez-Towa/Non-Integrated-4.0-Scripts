@@ -504,6 +504,10 @@ a:hover {
 }
 
 .grid-column-end {
+    grid-column: 4;
+}
+
+.grid-column-end-with-confee {
     grid-column: 5;
 }
 
@@ -599,6 +603,11 @@ a:hover {
 
     #paymentAmountRow {
         grid-column: 4;
+        grid-row: 1;
+    }
+
+    #paymentAmountRowWithConFee {
+        grid-column: 5;
         grid-row: 1;
     }
 
@@ -838,6 +847,11 @@ a:hover {
         grid-row: 1;
     }
 
+    #paymentAmountRowWithConFee {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
     #convenienceFeeSpan {
         font-size: 12.5px !important;
     }
@@ -1000,6 +1014,10 @@ a:hover {
     }
 
     .grid-column-end {
+        grid-column: 3;
+    }
+
+    .grid-column-end-with-confee {
         grid-column: 3;
     }
 
@@ -1460,6 +1478,11 @@ a:hover {
         grid-row: 2;
     }
 
+    #paymentAmountRowWithConFee {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
     #convenienceFeeSpan {
         font-size: 12.5px !important;
     }
@@ -1628,6 +1651,10 @@ a:hover {
     }
 
     .grid-column-end {
+        grid-column: 3;
+    }
+
+    .grid-column-end-with-confee {
         grid-column: 3;
     }
 
@@ -2155,6 +2182,10 @@ a:hover {
         grid-column: 3;
     }
 
+    .grid-column-end-with-confee {
+        grid-column: 3;
+    }
+
     .remove-padding-responsive {
         padding: 0px;
     }
@@ -2241,6 +2272,11 @@ a:hover {
     #paymentAmountRow {
         grid-column: 3;
         grid-row: 2;
+    }
+
+    #paymentAmountRowWithConFee {
+        grid-column: 1;
+        grid-row: 3;
     }
 
     #summary-invoice {
