@@ -517,6 +517,7 @@ function calculateTotal() {
 
         const total = TwoDecimals(invoiceAmount + feeAmount);
         $("#total-amount").text(total);
+        $("#fixed-total-amount").text(total);
         $("#percent-total-amount").text(total);
         $("#ach-total-amount").text(total);
         $("#paidAmount").val(total);
