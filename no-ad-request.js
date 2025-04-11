@@ -199,7 +199,7 @@ function onPay() {
             var umCommand = document.getElementsByName('UMcommand')[0].value;
 
             $("#loadingGifDiv").css("visibility", "visible");
-            if (merchant.surchargeType.toLowerCase() != "fixed" && paymentType == 0) {
+            if (merchant.applySurcharge == true && merchant.surchargeType.toLowerCase() != "fixed" && paymentType == 0) {
                 var surChargePercentValue = parseFloat(merchant.surchargeAmount).toFixed(2);
                 var surChargeAmount = amountValue * (surChargePercentValue / 100);
                 var totalAmount = parseFloat(amountValue) + parseFloat(surChargeAmount);
@@ -207,7 +207,7 @@ function onPay() {
                 document.getElementsByName('UMdeposit')[0].value = amountValue;
                 document.getElementsByName('UMconFee')[0].value = parseFloat(surChargeAmount).toFixed(2);
                 document.getElementsByName('UMcustom1')[0].value = parseFloat(surChargeAmount).toFixed(2);
-            } else if (merchant.surchargeType.toLowerCase() == "fixed" && paymentType == 0) {
+            } else if (merchant.applySurcharge == true && merchant.surchargeType.toLowerCase() == "fixed" && paymentType == 0) {
                 var totalAmount = parseFloat(amountValue) + parseFloat(merchant.surchargeAmount);
                 document.getElementsByName('UMamount')[0].value = totalAmount.toFixed(2);
                 document.getElementsByName('UMdeposit')[0].value = amountValue;
