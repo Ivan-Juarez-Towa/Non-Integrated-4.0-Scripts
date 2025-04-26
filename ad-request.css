@@ -640,6 +640,14 @@ a:hover {
     text-align: left;
 }
 
+.payment-form {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
 #header {
     display: inline-flex;
     width: 100%;
@@ -1719,7 +1727,7 @@ a:hover {
     }
 }
 
-@media (max-width: 940px), (orientation:landscape) {
+@media (max-width: 940px) and (orientation:landscape) {
     .merchant-custom-text {
         margin: auto;
         padding: 0 1em;

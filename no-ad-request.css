@@ -1476,7 +1476,7 @@ a:hover {
     }
 }
 
-@media (max-width: 940px), (orientation:landscape) {
+@media (max-width: 940px) and (orientation:landscape) {
     .merchant-custom-text {
         margin: auto;
         padding: 0 1em;

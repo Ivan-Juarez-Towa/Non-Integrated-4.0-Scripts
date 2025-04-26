@@ -6,11 +6,14 @@ function setMerchantConfiguration() {
     if (merchant.logoBanner != undefined && merchant.logoBanner != "") {
         $(".newlogoStep").attr('src', merchant.logoBanner);
     }
-    if (merchant.imageBackground != undefined && merchant.imageBackground != "") {
-        $("#ad-div-image").attr('src', merchant.imageBackground);
+    if (merchant.adImage != undefined && merchant.adImage != "") {
+        $("#ad-div-image").attr('src', merchant.adImage);
     }
-    if (merchant.imageBackgroundLink != undefined && merchant.imageBackgroundLink != "") {
-        $("#ad-button-div-link").attr('href', merchant.imageBackgroundLink);
+    if (merchant.imageBackground != undefined && merchant.imageBackground != "") {
+        $(".content-area-ad").attr('style', "background-image: url('"+ merchant.imageBackground +"'); background-repeat: round;  background-attachment: fixed; background-size: contain; display:inline-flex; flex-direction: unset;");
+    }
+    if (merchant.adImageLink != undefined && merchant.adImageLink != "") {
+        $("#ad-button-div-link").attr('href', merchant.adImageLink);
     }
     if (merchant.dbaText != undefined && merchant.dbaText != "") {
         //truncate text to avoid the page being cut
