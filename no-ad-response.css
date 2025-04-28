@@ -39,7 +39,6 @@ body {
     display: flex;
     width: 180px;
     margin-left: 20px;
-    position: absolute;
 }
 
 .newlogoStep {
@@ -47,7 +46,8 @@ body {
     height: 110px;
     width: 250px;
     object-fit: contain;
-    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .headerBrand {
@@ -561,7 +561,7 @@ a:hover {
 @media screen and (min-width: 1440px)  {
     .merchant-custom-text {
         margin: auto;
-        padding: 0 1em;
+        padding: 0 10em;
         width: 100%;
     }
     
@@ -609,7 +609,6 @@ a:hover {
         display: flex;
         width: 150px;
         margin-left: 20px;
-        position: absolute;
     }
 
     #header {
