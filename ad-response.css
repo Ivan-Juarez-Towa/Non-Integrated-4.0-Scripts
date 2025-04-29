@@ -37,7 +37,7 @@ body {
 
 .logoContainer {
     display: flex;
-    width: 180px;
+    width: auto;
     margin-left: 20px;
 }
 
@@ -613,7 +613,7 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
     }
 }
@@ -653,7 +653,7 @@ a:hover {
 
     .logoContainer {
         display: flex;
-        width: 150px;
+        width: auto;
         margin-left: 20px;
     }
 
@@ -679,7 +679,7 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
     }
     
@@ -1198,8 +1198,14 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
+    }
+
+    #headerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .payably-paymentMethodDiv-ad-version {
@@ -1260,7 +1266,7 @@ a:hover {
 
     .logoContainer {
         position: initial !important;
-        width: 100% !important;
+        width: auto !important;
         margin-left: 0px !important;
     }
 
@@ -1385,7 +1391,7 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
     }
 
@@ -1453,7 +1459,7 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
     }
 
@@ -2151,7 +2157,7 @@ a:hover {
 
     .logoContainer {
         position: initial;
-        width: 100%;
+        width: auto;
         margin-left: 0px;
     }
 
