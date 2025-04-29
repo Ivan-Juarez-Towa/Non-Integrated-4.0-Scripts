@@ -456,8 +456,7 @@ $(document).ready(function ($) {
 
 
     /* Initialize properties and check payment scenarios */
-    let ccPaymentIsDisabled = true;
-    let achPaymentIsDisabled = merchant.multiplePayMethod;
+    let achPaymentIsEnabled = merchant.multiplePayMethod;
 
     /* Choose to hide/show correct disclaimer texts */
     if (!merchant.applySurcharge) {
@@ -473,12 +472,8 @@ $(document).ready(function ($) {
         $("#disclaimer-cc-text-no-fee").hide();
     }
 
-    if (!ccPaymentIsDisabled || achPaymentIsDisabled) {
+    if (!achPaymentIsEnabled) {
         selectCreditDebitMethod();
-    }
-
-    if (!achPaymentIsDisabled || ccPaymentIsDisabled) {
-        selectBankMethod();
     }
 
     /*Field listeners*/
