@@ -253,11 +253,9 @@ function onPay() {
                 document.getElementsByName('UMcustom18')[0].value = invoiceNumber;
                 invoiceNumber = invoiceNumber.substring(invoiceNumber.indexOf("INV") + 4);
                 document.getElementsByName('UMinvoice')[0].value = invoiceNumber;
-                $("#UMinvoice")[0].innerHTML = invoiceNumber;
             } else {
                 document.getElementsByName('UMcustom18')[0].value = invoiceNumber;
                 document.getElementsByName('UMinvoice')[0].value = invoiceNumber;
-                $("#UMinvoice")[0].innerHTML = invoiceNumber;
             }
 
             $("#submit").click();
