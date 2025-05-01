@@ -236,7 +236,20 @@ function onPay() {
                 document.getElementsByName('UMcustom16')[0].value = "ach"
             }
 
-            document.getElementsByName('UMinvoice')[0].value = $('#invoiceNumber-details').val();
+            document.getElementsByName('UMcustom17')[0].value = amountValue;
+            document.getElementsByName('UMline1cost')[0].value = amountValue;
+            document.getElementsByName('UMcustom2')[0].value = amountValue;
+
+            var invoiceNumber = $('#invoiceNumber-details').val();
+
+            if (invoiceNumber.includes("EST")) {
+                document.getElementsByName('UMcustom18')[0].value = invoiceNumber;
+                invoiceNumber = invoiceNumber.substring(invoiceNumber.indexOf("INV") + 4);
+                document.getElementsByName('UMinvoice')[0].value = invoiceNumber;
+            } else {
+                document.getElementsByName('UMcustom18')[0].value = invoiceNumber;
+                document.getElementsByName('UMinvoice')[0].value = invoiceNumber;
+            }
 
             $("#submit").click();
         }
