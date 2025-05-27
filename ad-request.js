@@ -460,9 +460,17 @@ $(document).ready(function ($) {
         $("#info-text-span")[0].innerHTML = `By clicking Pay Now, I agree to pay<strong>${customer}</strong> the above amount in accordance with the Card Issuer Agreement`;
         var thankMessageSpanText = $('#thankMessageSpan')[0].innerHTML;
         $('#thankMessageSpan')[0].innerHTML = thankMessageSpanText.replace(/\[accountName]/g, customer);
+    } else if (searchParams.get('UMbillcompany')) {
+        var customer = searchParams.get('UMbillcompany').replaceAll('*', ' ');
+        document.getElementById('companyName-details').value = customer;
+        document.getElementById('companyName').value = customer;
+
+        $("#info-text-span")[0].innerHTML = `By clicking Pay Now, I agree to pay<strong>${customer}</strong> the above amount in accordance with the Card Issuer Agreement`;
+        var thankMessageSpanText = $('#thankMessageSpan')[0].innerHTML;
+        $('#thankMessageSpan')[0].innerHTML = thankMessageSpanText.replace(/\[accountName]/g, customer);
     }
 
-    var invoiceNumber = searchParams.get('orderNumber') ?? "";
+    var invoiceNumber = searchParams.get('orderNumber') ?? searchParams.get('UMinvoice') ?? "";
     $("#invoiceNumber-details")[0].value = invoiceNumber;
     $("#invoice-paid-header")[0].innerHTML = `Invoice #${invoiceNumber} Paid`;
     $("#invoiceNumber")[0].innerHTML = invoiceNumber;
