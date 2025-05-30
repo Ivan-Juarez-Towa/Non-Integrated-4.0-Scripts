@@ -266,7 +266,7 @@ function validateTwoStep() {
     $("#failedContainer").addClass('hide');
     $("#failedContainer").removeClass('active');
 
-    let amountToPay = parseFloat($("#paymentAmount").val().replace(',', ''));
+    let amountToPay = parseFloat($("#paymentAmount").val().replaceAll(',', ''));
     if (isNaN(amountToPay)) {
         alert("Invalid Amount");
         return;
@@ -518,7 +518,7 @@ $(document).ready(function ($) {
 
 function calculateTotal() {
     if ($("#paymentAmount").val().length != 0) {
-        let invoiceAmount = parseFloat($("#paymentAmount").val().replace(',', ''));
+        let invoiceAmount = parseFloat($("#paymentAmount").val().replaceAll(',', ''));
         const feeExist = merchant.applySurcharge;
         let feeAmount = 0;
         if (paymentType == 0 && feeExist) {
