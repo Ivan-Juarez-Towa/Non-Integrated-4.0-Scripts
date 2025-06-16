@@ -74,7 +74,7 @@ function setMerchantConfiguration() {
 
     if (merchant.surchargeAmount != undefined || merchant.surchargeAmount != "") {
         $('#fee-amount')[0].innerHTML = merchant.surchargeAmount
-        $("#percent-fee-amount")[0].innerHTML = merchant.surchargeAmount
+        $("#percent-fee-amount")[0].innerHTML = '0.00'
         $('#conFeeSpan')[0].innerHTML = `(${merchant.surchargeAmount}%):`
         $('#cc-disc-fee-per')[0].innerHTML = `${merchant.surchargeAmount}%`;
         $('#cc-disc-fee-fix')[0].innerHTML = `$${merchant.surchargeAmount}`;
